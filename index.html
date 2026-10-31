@@ -1717,8 +1717,10 @@
         }, 3200);
       }
 
-      // Inquiry Form Submission Handling
-      function handleInquirySubmit(event) {
+            // Inquiry Form Submission Handling with Google Sheets & Email
+      const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxh-TA8Df5yM8Zigx9pEXZwDQRWT3AW3d5In1KmiLwbGrOTZuZ3-JxUxugITWxc3NblzA/exec';
+
+      async function handleInquirySubmit(event) {
         event.preventDefault();
         const form = document.getElementById('inquiry-form');
         const thankYou = document.getElementById('form-thank-you');
@@ -1727,6 +1729,33 @@
         const emailVal = document.getElementById('contact-email').value.trim();
         const typeVal = document.getElementById('inquiry-type').value;
         const msgVal = document.getElementById('contact-message').value.trim();
+
+        // Populate summary state
+        document.getElementById('summary-name').textContent = nameVal || 'Anonymous';
+        document.getElementById('summary-email').textContent = emailVal || '—';
+        document.getElementById('summary-type').textContent = typeVal || 'General Inquiry';
+        document.getElementById('summary-msg').textContent = msgVal ? (msgVal.length > 55 ? msgVal.substring(0, 52) + '...' : msgVal) : '—';
+
+        // Background me data send karein
+        const payload = {
+          name: nameVal,
+          email: emailVal,
+          inquiry_type: typeVal,
+          message: msgVal
+        };
+
+        fetch(SCRIPT_URL, {
+          method: 'POST',
+          mode: 'no-cors',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        }).catch(err => console.error('Error logging submission:', err));
+
+        // Swap view immediately (smooth user experience)
+        form.style.display = 'none';
+        thankYou.style.display = 'block';
+      }
+      
 
         // Populate summary state
         document.getElementById('summary-name').textContent = nameVal || 'Anonymous';
