@@ -1717,7 +1717,7 @@
         }, 3200);
       }
 
-            // Inquiry Form Submission Handling with Google Sheets & Email
+      // Inquiry Form Submission Handling with Google Sheets & Email
       const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbxh-TA8Df5yM8Zigx9pEXZwDQRWT3AW3d5In1KmiLwbGrOTZuZ3-JxUxugITWxc3NblzA/exec';
 
       async function handleInquirySubmit(event) {
@@ -1752,18 +1752,6 @@
         }).catch(err => console.error('Error logging submission:', err));
 
         // Swap view immediately (smooth user experience)
-        form.style.display = 'none';
-        thankYou.style.display = 'block';
-      }
-      
-
-        // Populate summary state
-        document.getElementById('summary-name').textContent = nameVal || 'Anonymous';
-        document.getElementById('summary-email').textContent = emailVal || '—';
-        document.getElementById('summary-type').textContent = typeVal || 'General Inquiry';
-        document.getElementById('summary-msg').textContent = msgVal ? (msgVal.length > 55 ? msgVal.substring(0, 52) + '...' : msgVal) : '—';
-
-        // Swap view
         form.style.display = 'none';
         thankYou.style.display = 'block';
       }
