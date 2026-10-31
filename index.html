@@ -1,0 +1,1940 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nullvx | Aryan — Visual Artist & Illustrator</title>
+    <meta name="description" content="Aryan — Visual Artist & Illustrator exploring Dark Fantasy, Anime/Manga & Raw Graphite Studies under the brand Nullvx." />
+    <meta property="og:title" content="Nullvx | Aryan — Visual Artist & Illustrator" />
+    <meta property="og:description" content="Aryan — Visual Artist & Illustrator exploring Dark Fantasy, Anime/Manga & Raw Graphite Studies under the brand Nullvx." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://instagram.com/nullvx.art" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Nullvx | Aryan — Visual Artist & Illustrator" />
+    <meta name="twitter:description" content="Aryan — Visual Artist & Illustrator exploring Dark Fantasy, Anime/Manga & Raw Graphite Studies under the brand Nullvx." />
+
+    <!-- Google Fonts: Cinzel (Editorial Serif), Inter (Clean Sans), JetBrains Mono (Technical Monospace) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700;800&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+
+    <style>
+      /* ==========================================================================
+         RESET & BASE CONFIGURATION
+         Theme: Pure AMOLED Pitch Black (#000000) & Quiet Luxury Dark Charcoal
+         ========================================================================== */
+      :root {
+        --bg-pitch: #000000;
+        --card-bg: #0a0a0c;
+        --card-bg-elevated: #111115;
+        --border-subtle: rgba(255, 255, 255, 0.08);
+        --border-hover: rgba(255, 255, 255, 0.22);
+        --text-primary: #f4f4f6;
+        --text-secondary: #9a9aa2;
+        --text-muted: #5e5e66;
+        --accent-glow: rgba(255, 255, 255, 0.04);
+        --font-serif: 'Cinzel', Georgia, serif;
+        --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        --font-mono: 'JetBrains Mono', monospace;
+      }
+
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html {
+        background-color: var(--bg-pitch);
+        color: var(--text-primary);
+        font-family: var(--font-sans);
+        scroll-behavior: smooth;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+      }
+
+      body {
+        background-color: var(--bg-pitch);
+        color: var(--text-primary);
+        min-height: 100vh;
+        overflow-x: hidden;
+        line-height: 1.65;
+        font-size: 15px;
+      }
+
+      /* Monospace labels & eyebrow typography */
+      .mono-tag {
+        font-family: var(--font-mono);
+        font-size: 0.75rem;
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        color: var(--text-secondary);
+      }
+
+      .serif-heading {
+        font-family: var(--font-serif);
+        letter-spacing: 0.02em;
+        font-weight: 600;
+        color: #ffffff;
+      }
+
+      /* Container */
+      .shell {
+        max-width: 1080px;
+        margin: 0 auto;
+        padding: 0 1.5rem;
+      }
+
+      /* Header & Navigation */
+      .site-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 100;
+        background: rgba(0, 0, 0, 0.85);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border-bottom: 1px solid var(--border-subtle);
+        transition: background-color 0.3s ease, border-color 0.3s ease;
+      }
+
+      .nav-container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 68px;
+      }
+
+      .brand-mark {
+        font-family: var(--font-serif);
+        font-size: 1.25rem;
+        font-weight: 700;
+        letter-spacing: 0.18em;
+        color: #ffffff;
+        text-decoration: none;
+        display: inline-flex;
+        align-items: center;
+        gap: 0.45rem;
+      }
+
+      .brand-mark span.brand-dot {
+        display: inline-block;
+        width: 6px;
+        height: 6px;
+        background: #ffffff;
+        border-radius: 50%;
+        opacity: 0.6;
+      }
+
+      .nav-links {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        list-style: none;
+      }
+
+      .nav-link {
+        font-size: 0.85rem;
+        font-weight: 400;
+        letter-spacing: 0.04em;
+        color: var(--text-secondary);
+        text-decoration: none;
+        transition: color 0.2s ease;
+      }
+
+      .nav-link:hover {
+        color: #ffffff;
+      }
+
+      .test-404-btn {
+        font-family: var(--font-mono);
+        font-size: 0.72rem;
+        padding: 0.35rem 0.65rem;
+        background: rgba(255, 255, 255, 0.04);
+        border: 1px solid var(--border-subtle);
+        color: var(--text-secondary);
+        border-radius: 4px;
+        cursor: pointer;
+        transition: all 0.2s ease;
+      }
+
+      .test-404-btn:hover {
+        background: rgba(255, 255, 255, 0.1);
+        color: #ffffff;
+        border-color: var(--border-hover);
+      }
+
+      /* Mobile Navigation Bottom Dock (Refined Android Pill Navigation) */
+      .mobile-dock {
+        display: none;
+        position: fixed;
+        bottom: max(16px, calc(10px + env(safe-area-inset-bottom, 0px)));
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 100;
+        background: rgba(10, 10, 14, 0.94);
+        backdrop-filter: blur(24px) saturate(180%);
+        -webkit-backdrop-filter: blur(24px) saturate(180%);
+        border: 1px solid rgba(255, 255, 255, 0.12);
+        border-radius: 9999px;
+        padding: 5px;
+        box-shadow: 0 16px 36px rgba(0, 0, 0, 0.85), inset 0 1px 0 rgba(255, 255, 255, 0.14);
+        width: calc(100% - 1.5rem);
+        max-width: 410px;
+        transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
+      }
+
+      .mobile-dock-list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 4px;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+      }
+
+      .mobile-dock-item {
+        flex: 1;
+        min-width: 0;
+        display: flex;
+      }
+
+      .mobile-dock-btn {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 3px;
+        width: 100%;
+        min-height: 50px;
+        padding: 6px 2px;
+        border-radius: 9999px;
+        text-decoration: none;
+        border: 1px solid transparent;
+        background: transparent;
+        color: var(--text-secondary);
+        transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+        -webkit-tap-highlight-color: transparent;
+        user-select: none;
+        touch-action: manipulation;
+      }
+
+      .mobile-dock-btn .dock-icon {
+        font-size: 1.15rem;
+        line-height: 1;
+        color: var(--text-muted);
+        transition: color 0.2s ease, transform 0.2s ease;
+      }
+
+      .mobile-dock-btn .dock-label {
+        font-family: var(--font-mono);
+        font-size: 0.62rem;
+        font-weight: 500;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: var(--text-secondary);
+        transition: color 0.2s ease;
+        line-height: 1;
+        white-space: nowrap;
+      }
+
+      /* Hover & Focus state for mobile / touch */
+      .mobile-dock-btn:hover {
+        color: #ffffff;
+        background: rgba(255, 255, 255, 0.05);
+      }
+
+      .mobile-dock-btn:hover .dock-icon {
+        color: #ffffff;
+      }
+
+      /* Tactile Active Pill State */
+      .mobile-dock-btn.is-active,
+      .mobile-dock-btn:active {
+        background: rgba(255, 255, 255, 0.14);
+        border-color: rgba(255, 255, 255, 0.24);
+        color: #ffffff;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5), inset 0 1px 0 rgba(255, 255, 255, 0.2);
+        transform: scale(0.96);
+      }
+
+      .mobile-dock-btn.is-active .dock-icon {
+        color: #ffffff;
+        transform: translateY(-1px);
+      }
+
+      .mobile-dock-btn.is-active .dock-label {
+        color: #ffffff;
+        font-weight: 600;
+      }
+
+      /* Hero Section */
+      .hero-section {
+        padding-top: 170px;
+        padding-bottom: 100px;
+        min-height: 85vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+      }
+
+      .status-pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.55rem;
+        padding: 0.4rem 0.95rem;
+        border-radius: 9999px;
+        background: rgba(10, 10, 12, 0.9);
+        border: 1px solid var(--border-subtle);
+        width: fit-content;
+        margin-bottom: 2rem;
+        font-family: var(--font-mono);
+        font-size: 0.78rem;
+        color: #e4e4e7;
+        letter-spacing: 0.04em;
+      }
+
+      .pulse-dot {
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        background-color: #22c55e;
+        position: relative;
+      }
+
+      .pulse-dot::after {
+        content: '';
+        position: absolute;
+        top: -2px;
+        left: -2px;
+        right: -2px;
+        bottom: -2px;
+        border-radius: 50%;
+        border: 2px solid #22c55e;
+        opacity: 0.6;
+        animation: pulseRing 2.2s cubic-bezier(0.25, 0.46, 0.45, 0.94) infinite;
+      }
+
+      @keyframes pulseRing {
+        0% {
+          transform: scale(0.9);
+          opacity: 0.8;
+        }
+        70% {
+          transform: scale(2.4);
+          opacity: 0;
+        }
+        100% {
+          transform: scale(2.6);
+          opacity: 0;
+        }
+      }
+
+      .hero-headline {
+        font-size: clamp(2.4rem, 5.5vw, 4.4rem);
+        line-height: 1.12;
+        margin-bottom: 1.5rem;
+        max-width: 900px;
+        font-weight: 700;
+        color: #ffffff;
+      }
+
+      .hero-subtitle {
+        font-size: clamp(1.05rem, 2vw, 1.3rem);
+        color: var(--text-secondary);
+        max-width: 680px;
+        line-height: 1.6;
+        margin-bottom: 2.8rem;
+        font-weight: 300;
+      }
+
+      .cta-cluster {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 1.1rem;
+      }
+
+      /* Buttons */
+      .btn {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.55rem;
+        padding: 0.85rem 1.7rem;
+        font-size: 0.88rem;
+        font-weight: 500;
+        text-decoration: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: all 0.22s cubic-bezier(0.16, 1, 0.3, 1);
+        border: 1px solid transparent;
+        font-family: var(--font-sans);
+        letter-spacing: 0.02em;
+      }
+
+      .btn-primary {
+        background: #ffffff;
+        color: #000000;
+        border-color: #ffffff;
+      }
+
+      .btn-primary:hover {
+        background: #e4e4e7;
+        border-color: #e4e4e7;
+        transform: translateY(-1px);
+        box-shadow: 0 8px 24px rgba(255, 255, 255, 0.12);
+      }
+
+      .btn-secondary {
+        background: var(--card-bg);
+        color: var(--text-primary);
+        border-color: var(--border-subtle);
+      }
+
+      .btn-secondary:hover {
+        background: var(--card-bg-elevated);
+        border-color: var(--border-hover);
+        color: #ffffff;
+        transform: translateY(-1px);
+      }
+
+      .btn-outline {
+        background: transparent;
+        color: var(--text-secondary);
+        border-color: var(--border-subtle);
+      }
+
+      .btn-outline:hover {
+        background: rgba(255, 255, 255, 0.05);
+        border-color: var(--border-hover);
+        color: #ffffff;
+      }
+
+      /* Sections General */
+      .section-divider {
+        height: 1px;
+        background: var(--border-subtle);
+        width: 100%;
+      }
+
+      .content-section {
+        padding: 6.5rem 0;
+      }
+
+      .section-header {
+        margin-bottom: 3.2rem;
+      }
+
+      .eyebrow {
+        margin-bottom: 0.85rem;
+      }
+
+      .section-title {
+        font-size: clamp(1.8rem, 3.5vw, 2.75rem);
+        line-height: 1.2;
+        color: #ffffff;
+        margin-bottom: 0.8rem;
+      }
+
+      .section-description {
+        font-size: 1.05rem;
+        color: var(--text-secondary);
+        max-width: 640px;
+        line-height: 1.65;
+      }
+
+      /* Section 01: Gallery & Hub */
+      .hub-card {
+        background: var(--card-bg);
+        border: 1px solid var(--border-subtle);
+        border-radius: 8px;
+        padding: 3rem 2.5rem;
+        position: relative;
+        overflow: hidden;
+        transition: border-color 0.3s ease;
+      }
+
+      .hub-card:hover {
+        border-color: var(--border-hover);
+      }
+
+      .hub-grid {
+        display: grid;
+        grid-template-columns: 1.3fr 1fr;
+        gap: 2.5rem;
+        align-items: center;
+      }
+
+      .hub-text {
+        color: var(--text-secondary);
+        font-size: 1.05rem;
+        line-height: 1.7;
+        margin-bottom: 1.8rem;
+      }
+
+      .hub-meta-list {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+        margin-bottom: 2rem;
+      }
+
+      .hub-meta-item {
+        font-family: var(--font-mono);
+        font-size: 0.8rem;
+        color: var(--text-muted);
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+      }
+
+      .hub-meta-item span.bullet {
+        color: var(--text-secondary);
+      }
+
+      .hub-badge-box {
+        background: #000000;
+        border: 1px solid var(--border-subtle);
+        border-radius: 6px;
+        padding: 2.2rem 2rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .hub-handle {
+        font-family: var(--font-mono);
+        font-size: 1.35rem;
+        letter-spacing: 0.05em;
+        color: #ffffff;
+        margin-bottom: 0.5rem;
+      }
+
+      .hub-handle-sub {
+        font-size: 0.82rem;
+        color: var(--text-muted);
+        margin-bottom: 1.6rem;
+      }
+
+      /* Section 02: About */
+      .about-grid {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+      }
+
+      .about-bio-card {
+        background: var(--card-bg);
+        border: 1px solid var(--border-subtle);
+        border-radius: 8px;
+        padding: 2.75rem 2.5rem;
+      }
+
+      .bio-paragraph {
+        font-size: 1.08rem;
+        color: var(--text-secondary);
+        line-height: 1.8;
+        margin-bottom: 1.6rem;
+      }
+
+      .bio-paragraph:last-child {
+        margin-bottom: 0;
+      }
+
+      .highlights-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+        margin-top: 2rem;
+      }
+
+      .highlight-card {
+        background: var(--card-bg);
+        border: 1px solid var(--border-subtle);
+        border-radius: 8px;
+        padding: 2.2rem 1.8rem;
+        transition: border-color 0.25s ease, transform 0.25s ease;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .highlight-card:hover {
+        border-color: var(--border-hover);
+        transform: translateY(-2px);
+      }
+
+      .highlight-label {
+        font-family: var(--font-mono);
+        font-size: 0.75rem;
+        color: var(--text-muted);
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+      }
+
+      .highlight-title {
+        font-family: var(--font-serif);
+        font-size: 1.22rem;
+        font-weight: 600;
+        color: #ffffff;
+        line-height: 1.35;
+        margin-bottom: 0.75rem;
+      }
+
+      .highlight-desc {
+        font-size: 0.86rem;
+        color: var(--text-secondary);
+        line-height: 1.6;
+      }
+
+      /* Section 03: FAQ Accordion */
+      .faq-accordion {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+      }
+
+      .faq-item {
+        background: var(--card-bg);
+        border: 1px solid var(--border-subtle);
+        border-radius: 8px;
+        overflow: hidden;
+        transition: border-color 0.2s ease;
+      }
+
+      .faq-item:hover {
+        border-color: var(--border-hover);
+      }
+
+      .faq-button {
+        width: 100%;
+        background: transparent;
+        border: none;
+        padding: 1.6rem 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1.5rem;
+        text-align: left;
+        cursor: pointer;
+        color: #ffffff;
+      }
+
+      .faq-question-text {
+        font-family: var(--font-sans);
+        font-size: 1.05rem;
+        font-weight: 500;
+        letter-spacing: 0.01em;
+        line-height: 1.45;
+      }
+
+      .faq-toggle-icon {
+        font-family: var(--font-mono);
+        font-size: 1.3rem;
+        line-height: 1;
+        color: var(--text-secondary);
+        flex-shrink: 0;
+        width: 24px;
+        height: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: color 0.2s ease, transform 0.2s ease;
+      }
+
+      .faq-item.is-open .faq-toggle-icon {
+        color: #ffffff;
+      }
+
+      .faq-panel {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.35s cubic-bezier(0.16, 1, 0.3, 1), padding 0.35s ease;
+      }
+
+      .faq-panel-content {
+        padding: 0 2rem 1.8rem 2rem;
+        color: var(--text-secondary);
+        font-size: 0.95rem;
+        line-height: 1.75;
+      }
+
+      /* Section 04: Contact Hub */
+      .contact-grid {
+        display: grid;
+        grid-template-columns: 1fr 1.2fr;
+        gap: 2rem;
+      }
+
+      .contact-card {
+        background: var(--card-bg);
+        border: 1px solid var(--border-subtle);
+        border-radius: 8px;
+        padding: 2.5rem 2.2rem;
+      }
+
+      .contact-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .contact-direct-actions {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        margin: 1.8rem 0;
+      }
+
+      .contact-ig-card {
+        background: #000000;
+        border: 1px solid var(--border-subtle);
+        border-radius: 6px;
+        padding: 1.4rem 1.5rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        text-decoration: none;
+        color: inherit;
+        transition: border-color 0.2s ease, transform 0.2s ease;
+      }
+
+      .contact-ig-card:hover {
+        border-color: var(--border-hover);
+        transform: translateY(-1px);
+      }
+
+      .ig-info-label {
+        font-family: var(--font-mono);
+        font-size: 0.72rem;
+        color: var(--text-muted);
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+      }
+
+      .ig-info-handle {
+        font-size: 1rem;
+        font-weight: 500;
+        color: #ffffff;
+      }
+
+      .ig-arrow {
+        font-family: var(--font-mono);
+        font-size: 1.15rem;
+        color: var(--text-secondary);
+      }
+
+      /* Intake Form */
+      .form-group {
+        margin-bottom: 1.3rem;
+      }
+
+      .form-label {
+        display: block;
+        font-family: var(--font-mono);
+        font-size: 0.75rem;
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        color: var(--text-secondary);
+        margin-bottom: 0.5rem;
+      }
+
+      .form-input,
+      .form-select,
+      .form-textarea {
+        width: 100%;
+        background: #000000;
+        border: 1px solid var(--border-subtle);
+        border-radius: 4px;
+        color: #ffffff;
+        padding: 0.85rem 1rem;
+        font-family: var(--font-sans);
+        font-size: 0.92rem;
+        transition: border-color 0.2s ease, box-shadow 0.2s ease;
+        outline: none;
+      }
+
+      .form-select {
+        appearance: none;
+        -webkit-appearance: none;
+        background-image: linear-gradient(45deg, transparent 50%, #9a9aa2 50%),
+                          linear-gradient(135deg, #9a9aa2 50%, transparent 50%);
+        background-position: calc(100% - 20px) calc(1.1em + 2px),
+                            calc(100% - 15px) calc(1.1em + 2px);
+        background-size: 5px 5px, 5px 5px;
+        background-repeat: no-repeat;
+        cursor: pointer;
+      }
+
+      .form-input:focus,
+      .form-select:focus,
+      .form-textarea:focus {
+        border-color: #ffffff;
+        box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.2);
+      }
+
+      .form-textarea {
+        resize: vertical;
+        min-height: 120px;
+      }
+
+      /* Thank-You State */
+      .form-success-card {
+        display: none;
+        background: #000000;
+        border: 1px solid var(--border-hover);
+        border-radius: 6px;
+        padding: 2.2rem;
+        animation: fadeIn 0.4s ease forwards;
+      }
+
+      .success-eyebrow {
+        color: #22c55e;
+        margin-bottom: 0.8rem;
+      }
+
+      .success-title {
+        font-family: var(--font-serif);
+        font-size: 1.5rem;
+        color: #ffffff;
+        margin-bottom: 1.2rem;
+      }
+
+      .success-summary {
+        background: var(--card-bg);
+        border: 1px solid var(--border-subtle);
+        border-radius: 4px;
+        padding: 1.2rem;
+        margin-bottom: 1.6rem;
+        font-size: 0.86rem;
+      }
+
+      .summary-row {
+        display: flex;
+        justify-content: space-between;
+        padding: 0.45rem 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      }
+
+      .summary-row:last-child {
+        border-bottom: none;
+      }
+
+      .summary-key {
+        font-family: var(--font-mono);
+        color: var(--text-muted);
+      }
+
+      .summary-val {
+        color: #ffffff;
+        font-weight: 500;
+        text-align: right;
+        max-width: 60%;
+        word-break: break-word;
+      }
+
+      /* Custom 404 View */
+      #view-404 {
+        display: none;
+        min-height: 100vh;
+        background: #000000;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 999;
+        overflow-y: auto;
+        padding: 4rem 1.5rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
+
+      .error-code {
+        font-family: var(--font-mono);
+        font-size: clamp(3.5rem, 8vw, 6rem);
+        color: #ffffff;
+        letter-spacing: 0.05em;
+        line-height: 1;
+        margin-bottom: 1.2rem;
+      }
+
+      .error-subtitle {
+        font-family: var(--font-serif);
+        font-size: 1.5rem;
+        color: var(--text-secondary);
+        margin-bottom: 1.2rem;
+      }
+
+      .error-desc {
+        color: var(--text-muted);
+        font-size: 1.05rem;
+        max-width: 480px;
+        margin-bottom: 2.5rem;
+        line-height: 1.6;
+      }
+
+      /* Footer */
+      .site-footer {
+        border-top: 1px solid var(--border-subtle);
+        padding: 4rem 0 6rem 0;
+        background: #000000;
+      }
+
+      .footer-inner {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1.5rem;
+      }
+
+      .footer-copy {
+        font-size: 0.85rem;
+        color: var(--text-muted);
+        letter-spacing: 0.02em;
+      }
+
+      .footer-actions {
+        display: flex;
+        align-items: center;
+        gap: 1.5rem;
+      }
+
+      .footer-link {
+        font-size: 0.85rem;
+        color: var(--text-secondary);
+        text-decoration: none;
+        transition: color 0.2s ease;
+      }
+
+      .footer-link:hover {
+        color: #ffffff;
+      }
+
+      /* Animated CSS Toast Notification */
+      .toast-notification {
+        position: fixed;
+        bottom: 2rem;
+        right: 2rem;
+        z-index: 1000;
+        background: #111115;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        color: #ffffff;
+        padding: 0.85rem 1.35rem;
+        border-radius: 6px;
+        font-size: 0.86rem;
+        display: flex;
+        align-items: center;
+        gap: 0.65rem;
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.8);
+        transform: translateY(100px);
+        opacity: 0;
+        pointer-events: none;
+        transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.3s ease;
+      }
+
+      .toast-notification.show {
+        transform: translateY(0);
+        opacity: 1;
+        pointer-events: auto;
+      }
+
+      .toast-icon {
+        color: #22c55e;
+        font-size: 1rem;
+      }
+
+      /* ==========================================================================
+         EDITORIAL TEXT SCROLL REVEAL ANIMATIONS
+         Smooth cinematic opacity fade, subtle vertical glide, and soft focus pull
+         ========================================================================== */
+      .text-reveal {
+        opacity: 0;
+        transform: translateY(22px);
+        filter: blur(4px);
+        transition:
+          opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1),
+          transform 0.85s cubic-bezier(0.16, 1, 0.3, 1),
+          filter 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+        will-change: opacity, transform, filter;
+      }
+
+      .text-reveal.is-revealed {
+        opacity: 1;
+        transform: translateY(0);
+        filter: blur(0);
+      }
+
+      /* Container & card scroll reveal */
+      .scroll-reveal {
+        opacity: 0;
+        transform: translateY(18px);
+        transition:
+          opacity 0.85s cubic-bezier(0.16, 1, 0.3, 1),
+          transform 0.85s cubic-bezier(0.16, 1, 0.3, 1);
+        will-change: opacity, transform;
+      }
+
+      .scroll-reveal.is-revealed {
+        opacity: 1;
+        transform: translateY(0);
+      }
+
+      /* Staggered delay helpers */
+      .delay-1 { transition-delay: 0.08s; }
+      .delay-2 { transition-delay: 0.16s; }
+      .delay-3 { transition-delay: 0.24s; }
+      .delay-4 { transition-delay: 0.32s; }
+      .delay-5 { transition-delay: 0.40s; }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(6px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      /* Responsive Breakpoints */
+      @media (max-width: 900px) {
+        .highlights-grid {
+          grid-template-columns: 1fr;
+          gap: 1.2rem;
+        }
+
+        .hub-grid {
+          grid-template-columns: 1fr;
+          gap: 2rem;
+        }
+
+        .contact-grid {
+          grid-template-columns: 1fr;
+          gap: 2rem;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .nav-links {
+          display: none;
+        }
+
+        .mobile-dock {
+          display: block;
+        }
+
+        .hero-section {
+          padding-top: 130px;
+          padding-bottom: 70px;
+        }
+
+        /* Tactile Pill Buttons on Android / Mobile */
+        .status-pill {
+          padding: 0.5rem 1.1rem;
+          font-size: 0.76rem;
+          margin-bottom: 1.6rem;
+          border-radius: 9999px;
+          border-color: rgba(255, 255, 255, 0.14);
+        }
+
+        .cta-cluster {
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          gap: 0.85rem;
+        }
+
+        .cta-cluster .btn {
+          width: 100%;
+          min-height: 48px;
+          border-radius: 9999px;
+          font-size: 0.94rem;
+          justify-content: center;
+        }
+
+        .contact-direct-actions .btn {
+          border-radius: 9999px;
+          min-height: 46px;
+        }
+
+        .content-section {
+          padding: 4.5rem 0;
+        }
+
+        .hub-card,
+        .about-bio-card,
+        .contact-card {
+          padding: 2rem 1.4rem;
+        }
+
+        .faq-button {
+          padding: 1.3rem 1.4rem;
+        }
+
+        .faq-panel-content {
+          padding: 0 1.4rem 1.4rem 1.4rem;
+        }
+
+        /* Ensure toast floats comfortably above the bottom navigation dock on Android */
+        .toast-notification {
+          left: 1rem;
+          right: 1rem;
+          bottom: calc(82px + env(safe-area-inset-bottom, 0px));
+          justify-content: center;
+        }
+
+        .footer-inner {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 1.2rem;
+          padding-bottom: 3.5rem; /* extra clearance for mobile dock */
+        }
+      }
+
+      @media (prefers-reduced-motion: reduce) {
+        * {
+          animation-duration: 0.001ms !important;
+          animation-iteration-count: 1 !important;
+          transition-duration: 0.001ms !important;
+        }
+        .scroll-reveal,
+        .text-reveal {
+          opacity: 1 !important;
+          transform: none !important;
+          filter: none !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Main Website Container -->
+    <div id="main-view">
+      <!-- Fixed Navigation -->
+      <header class="site-header">
+        <div class="shell">
+          <nav class="nav-container" aria-label="Main Navigation">
+            <a href="#" class="brand-mark">
+              NULLVX
+              <span class="brand-dot" aria-hidden="true"></span>
+            </a>
+
+            <ul class="nav-links">
+              <li><a href="#" class="nav-link">Home</a></li>
+              <li><a href="#gallery" class="nav-link">Gallery</a></li>
+              <li><a href="#about" class="nav-link">About</a></li>
+              <li><a href="#faq" class="nav-link">FAQ</a></li>
+              <li><a href="#contact" class="nav-link">Contact</a></li>
+              <li>
+                <button type="button" class="test-404-btn" onclick="toggle404View(true)" title="Preview Custom 404 View">
+                  Test 404
+                </button>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <!-- Mobile Bottom Dock Navigation (Refined Android Pill Bar) -->
+      <nav class="mobile-dock" aria-label="Mobile Navigation Dock">
+        <ul class="mobile-dock-list">
+          <li class="mobile-dock-item">
+            <a href="#" class="mobile-dock-btn is-active" data-section="hero" onclick="handleDockClick(this, event)">
+              <span class="dock-icon" aria-hidden="true">⌂</span>
+              <span class="dock-label">Home</span>
+            </a>
+          </li>
+          <li class="mobile-dock-item">
+            <a href="#gallery" class="mobile-dock-btn" data-section="gallery" onclick="handleDockClick(this, event)">
+              <span class="dock-icon" aria-hidden="true">◈</span>
+              <span class="dock-label">Gallery</span>
+            </a>
+          </li>
+          <li class="mobile-dock-item">
+            <a href="#about" class="mobile-dock-btn" data-section="about" onclick="handleDockClick(this, event)">
+              <span class="dock-icon" aria-hidden="true">✦</span>
+              <span class="dock-label">About</span>
+            </a>
+          </li>
+          <li class="mobile-dock-item">
+            <a href="#faq" class="mobile-dock-btn" data-section="faq" onclick="handleDockClick(this, event)">
+              <span class="dock-icon" aria-hidden="true">⟡</span>
+              <span class="dock-label">FAQ</span>
+            </a>
+          </li>
+          <li class="mobile-dock-item">
+            <a href="#contact" class="mobile-dock-btn" data-section="contact" onclick="handleDockClick(this, event)">
+              <span class="dock-icon" aria-hidden="true">✉</span>
+              <span class="dock-label">Contact</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- 1. Hero Section (Above the Fold) -->
+      <section class="hero-section" id="hero">
+        <div class="shell">
+          <div>
+            <div class="status-pill text-reveal">
+              <span class="pulse-dot" aria-hidden="true"></span>
+              <span>Open for Commissions &amp; Inquiries</span>
+            </div>
+
+            <h1 class="serif-heading hero-headline text-reveal">
+              Sketched by Hand, Rendered in Detail.
+            </h1>
+
+            <p class="hero-subtitle text-reveal">
+              Aryan — Visual Artist &amp; Illustrator exploring Dark Fantasy, Anime/Manga &amp; Raw Graphite Studies.
+            </p>
+
+            <div class="cta-cluster text-reveal">
+              <a
+                href="https://instagram.com/nullvx.art"
+                target="_blank"
+                rel="noopener"
+                class="btn btn-primary"
+              >
+                View Art on Instagram ↗
+              </a>
+              <a href="#contact" class="btn btn-secondary">
+                Get in Touch ↓
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="section-divider"></div>
+
+      <!-- 2. Art Gallery / Hub Section -->
+      <section class="content-section" id="gallery">
+        <div class="shell">
+          <div class="section-header">
+            <div class="mono-tag eyebrow text-reveal">01 // GALLERY &amp; ARCHIVE</div>
+            <h2 class="serif-heading section-title text-reveal">Selected Works &amp; Studies</h2>
+          </div>
+
+          <div class="hub-card scroll-reveal">
+            <div class="hub-grid">
+              <div>
+                <p class="hub-text text-reveal">
+                  All finished illustrations, work-in-progress sketches, study breakdowns, and speed-drawing reels are curated directly on my Instagram feed. Visit the profile to browse the full archive.
+                </p>
+
+                <ul class="hub-meta-list text-reveal">
+                  <li class="hub-meta-item">
+                    <span class="bullet">✦</span>
+                    <span>Direct digital illustrations &amp; high-contrast studies</span>
+                  </li>
+                  <li class="hub-meta-item">
+                    <span class="bullet">✦</span>
+                    <span>Traditional graphite pencil sheets &amp; ink linework</span>
+                  </li>
+                  <li class="hub-meta-item">
+                    <span class="bullet">✦</span>
+                    <span>WIP process reels &amp; anatomical breakdowns</span>
+                  </li>
+                </ul>
+
+                <a
+                  href="https://instagram.com/nullvx.art"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn btn-primary text-reveal"
+                >
+                  Open @nullvx.art on Instagram ↗
+                </a>
+              </div>
+
+              <div class="hub-badge-box text-reveal">
+                <div class="mono-tag" style="margin-bottom: 0.6rem;">OFFICIAL ARCHIVE</div>
+                <div class="hub-handle">@nullvx.art</div>
+                <div class="hub-handle-sub">Updated with latest studio works</div>
+                <a
+                  href="https://instagram.com/nullvx.art"
+                  target="_blank"
+                  rel="noopener"
+                  class="btn btn-outline"
+                  style="width: 100%;"
+                >
+                  View Profile ↗
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="section-divider"></div>
+
+      <!-- 3. About the Artist Section -->
+      <section class="content-section" id="about">
+        <div class="shell">
+          <div class="section-header">
+            <div class="mono-tag eyebrow text-reveal">02 // THE ARTIST</div>
+            <h2 class="serif-heading section-title text-reveal">Behind Nullvx</h2>
+          </div>
+
+          <div class="about-grid">
+            <div class="about-bio-card scroll-reveal">
+              <p class="bio-paragraph text-reveal">
+                I am a 2D visual artist working across traditional paper and digital rendering. My work focuses primarily on dark fantasy aesthetics, expressive anime and manga characters, and human sketch studies.
+              </p>
+              <p class="bio-paragraph text-reveal">
+                Rather than presenting only polished results, Nullvx exists to document the raw creative process from the ground up. Whether working with graphite pencils and ink on paper or drawing with standard digital tools, every piece reflects hours of disciplined practice and study.
+              </p>
+            </div>
+
+            <!-- 3-Column Highlights Grid -->
+            <div class="highlights-grid">
+              <div class="highlight-card scroll-reveal text-reveal">
+                <div>
+                  <div class="highlight-label">01 / MEDIUMS</div>
+                  <h3 class="highlight-title">2D Digital &amp; Traditional Graphite Paper</h3>
+                </div>
+                <p class="highlight-desc">
+                  Seamless interplay between tactile tooth on heavyweight paper and pressure-sensitive digital stylus strokes.
+                </p>
+              </div>
+
+              <div class="highlight-card scroll-reveal text-reveal">
+                <div>
+                  <div class="highlight-label">02 / FOCUS</div>
+                  <h3 class="highlight-title">Dark Fantasy &amp; Character Art</h3>
+                </div>
+                <p class="highlight-desc">
+                  Exploring visceral mood, dark silhouettes, emotive facial expressions, and dynamic character anatomy.
+                </p>
+              </div>
+
+              <div class="highlight-card scroll-reveal text-reveal">
+                <div>
+                  <div class="highlight-label">03 / CRAFT</div>
+                  <h3 class="highlight-title">100% Hand-Drawn</h3>
+                </div>
+                <p class="highlight-desc">
+                  Every mark, contour, cross-hatch, and render is composed stroke-by-stroke through authentic artistic discipline.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="section-divider"></div>
+
+      <!-- 4. 5 Interactive Accordion FAQs -->
+      <section class="content-section" id="faq">
+        <div class="shell">
+          <div class="section-header">
+            <div class="mono-tag eyebrow text-reveal">03 // KNOWLEDGE BASE</div>
+            <h2 class="serif-heading section-title text-reveal">Frequently Asked Questions</h2>
+          </div>
+
+          <div class="faq-accordion">
+            <!-- FAQ 1 -->
+            <div class="faq-item text-reveal">
+              <button
+                type="button"
+                class="faq-button"
+                aria-expanded="false"
+                aria-controls="faq-ans-1"
+                onclick="toggleFaq(this)"
+              >
+                <span class="faq-question-text">Are you currently open for custom commissions?</span>
+                <span class="faq-toggle-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-panel" id="faq-ans-1">
+                <div class="faq-panel-content">
+                  Yes! I am currently accepting custom commission requests. Since I review every piece on an individual project basis, simply reach out via the contact form here or email nullvx.art@gmail.com with your ideas.
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 2 -->
+            <div class="faq-item text-reveal">
+              <button
+                type="button"
+                class="faq-button"
+                aria-expanded="false"
+                aria-controls="faq-ans-2"
+                onclick="toggleFaq(this)"
+              >
+                <span class="faq-question-text">What mediums and tools do you use for your artwork?</span>
+                <span class="faq-toggle-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-panel" id="faq-ans-2">
+                <div class="faq-panel-content">
+                  I work across both 2D digital illustration and traditional paper mediums (strictly 2D—no 3D modeling). Traditional pieces are made using graded graphite pencils, ink, and paper, while digital artwork is created using pressure-sensitive digital brushes.
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 3 -->
+            <div class="faq-item text-reveal">
+              <button
+                type="button"
+                class="faq-button"
+                aria-expanded="false"
+                aria-controls="faq-ans-3"
+                onclick="toggleFaq(this)"
+              >
+                <span class="faq-question-text">How do you handle Master Studies or referenced work?</span>
+                <span class="faq-toggle-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-panel" id="faq-ans-3">
+                <div class="faq-panel-content">
+                  In art, studies and reference work are natural steps for growth. Whenever a study based on an existing piece or external reference is shared, it will be clearly credited so everyone is on the same page.
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 4 -->
+            <div class="faq-item text-reveal">
+              <button
+                type="button"
+                class="faq-button"
+                aria-expanded="false"
+                aria-controls="faq-ans-4"
+                onclick="toggleFaq(this)"
+              >
+                <span class="faq-question-text">Can I buy physical or digital prints of your artwork?</span>
+                <span class="faq-toggle-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-panel" id="faq-ans-4">
+                <div class="faq-panel-content">
+                  Yes! I accept fine art print and digital download requests. Send a quick message via the contact section below mentioning the piece you're interested in, and we can discuss the options.
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 5 -->
+            <div class="faq-item text-reveal">
+              <button
+                type="button"
+                class="faq-button"
+                aria-expanded="false"
+                aria-controls="faq-ans-5"
+                onclick="toggleFaq(this)"
+              >
+                <span class="faq-question-text">Where can I see your most up-to-date artwork?</span>
+                <span class="faq-toggle-icon" aria-hidden="true">+</span>
+              </button>
+              <div class="faq-panel" id="faq-ans-5">
+                <div class="faq-panel-content">
+                  The archive on this website is updated periodically, but my absolute latest sketches, work-in-progress reels, and finished projects are always shared first on my Instagram profile (@nullvx.art). Be sure to check there!
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="section-divider"></div>
+
+      <!-- 5. Contact Hub -->
+      <section class="content-section" id="contact">
+        <div class="shell">
+          <div class="section-header">
+            <div class="mono-tag eyebrow text-reveal">04 // CONTACT</div>
+            <h2 class="serif-heading section-title text-reveal">Initiate an Inquiry</h2>
+            <p class="section-description text-reveal">
+              Reach out directly for custom commissions, private collection print inquiries, or artistic collaborations.
+            </p>
+          </div>
+
+          <div class="contact-grid">
+            <!-- Left Side: Direct Contact Details -->
+            <div class="contact-card contact-left scroll-reveal">
+              <div>
+                <div class="mono-tag text-reveal" style="margin-bottom: 0.6rem;">DIRECT CORRESPONDENCE</div>
+                <h3 class="serif-heading text-reveal" style="font-size: 1.45rem; margin-bottom: 0.75rem;">Direct Reach</h3>
+                <p class="text-reveal" style="color: var(--text-secondary); font-size: 0.92rem; line-height: 1.65;">
+                  Have a specific commission prompt, sizing question, or deadline? Send an email directly or connect via Instagram messaging.
+                </p>
+
+                <div class="contact-direct-actions text-reveal">
+                  <a href="mailto:nullvx.art@gmail.com" class="btn btn-primary">
+                    Send Direct Email ✉
+                  </a>
+                  <button
+                    type="button"
+                    class="btn btn-secondary"
+                    onclick="copyEmailToClipboard()"
+                  >
+                    Copy Email 📋
+                  </button>
+                </div>
+              </div>
+
+              <div class="text-reveal">
+                <a
+                  href="https://instagram.com/nullvx.art"
+                  target="_blank"
+                  rel="noopener"
+                  class="contact-ig-card"
+                >
+                  <div>
+                    <div class="ig-info-label">INSTAGRAM PROFILE</div>
+                    <div class="ig-info-handle">@nullvx.art</div>
+                  </div>
+                  <div class="ig-arrow">↗</div>
+                </a>
+              </div>
+            </div>
+
+            <!-- Right Side: Clean Intake Form -->
+            <div class="contact-card scroll-reveal">
+              <form id="inquiry-form" onsubmit="handleInquirySubmit(event)">
+                <div class="form-group text-reveal">
+                  <label for="contact-name" class="form-label">Your Name</label>
+                  <input
+                    type="text"
+                    id="contact-name"
+                    name="name"
+                    class="form-input"
+                    placeholder="Enter your name"
+                    required
+                  />
+                </div>
+
+                <div class="form-group text-reveal">
+                  <label for="contact-email" class="form-label">Email Address</label>
+                  <input
+                    type="email"
+                    id="contact-email"
+                    name="email"
+                    class="form-input"
+                    placeholder="name@example.com"
+                    required
+                  />
+                </div>
+
+                <div class="form-group text-reveal">
+                  <label for="inquiry-type" class="form-label">Inquiry Type</label>
+                  <select id="inquiry-type" name="inquiryType" class="form-select" required>
+                    <option value="" disabled selected>Select an option...</option>
+                    <option value="Custom Commission">Custom Commission</option>
+                    <option value="Print Request">Print Request</option>
+                    <option value="General Inquiry">General Inquiry</option>
+                  </select>
+                </div>
+
+                <div class="form-group text-reveal">
+                  <label for="contact-message" class="form-label">Message &amp; Project Scope</label>
+                  <textarea
+                    id="contact-message"
+                    name="message"
+                    class="form-textarea"
+                    placeholder="Describe your vision, character references, required dimensions, or timeline..."
+                    required
+                  ></textarea>
+                </div>
+
+                <div class="text-reveal">
+                  <button type="submit" class="btn btn-primary" style="width: 100%;">
+                    Send Inquiry ↗
+                  </button>
+                </div>
+              </form>
+
+              <!-- Inline Thank-You State Upon Submission -->
+              <div id="form-thank-you" class="form-success-card">
+                <div class="mono-tag success-eyebrow">✓ INQUIRY RECEIVED</div>
+                <h3 class="success-title">Thank you for reaching out</h3>
+                <p style="color: var(--text-secondary); font-size: 0.9rem; line-height: 1.65; margin-bottom: 1.4rem;">
+                  Your message has been documented. Aryan will review project availability and respond directly within 24–48 hours.
+                </p>
+
+                <div class="success-summary">
+                  <div class="summary-row">
+                    <span class="summary-key">Client:</span>
+                    <span class="summary-val" id="summary-name">—</span>
+                  </div>
+                  <div class="summary-row">
+                    <span class="summary-key">Email:</span>
+                    <span class="summary-val" id="summary-email">—</span>
+                  </div>
+                  <div class="summary-row">
+                    <span class="summary-key">Type:</span>
+                    <span class="summary-val" id="summary-type">—</span>
+                  </div>
+                  <div class="summary-row">
+                    <span class="summary-key">Message Excerpt:</span>
+                    <span class="summary-val" id="summary-msg">—</span>
+                  </div>
+                </div>
+
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  onclick="resetInquiryForm()"
+                  style="width: 100%;"
+                >
+                  Send Another Inquiry
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 6. Footer -->
+      <footer class="site-footer">
+        <div class="shell">
+          <div class="footer-inner text-reveal">
+            <div class="footer-copy">
+              © Nullvx • Aryan (@nullvx.art). All rights reserved.
+            </div>
+
+            <div class="footer-actions">
+              <a href="mailto:nullvx.art@gmail.com" class="footer-link">
+                nullvx.art@gmail.com
+              </a>
+              <a
+                href="https://instagram.com/nullvx.art"
+                target="_blank"
+                rel="noopener"
+                class="footer-link"
+              >
+                Instagram ↗
+              </a>
+              <button
+                type="button"
+                class="test-404-btn"
+                onclick="toggle404View(true)"
+              >
+                Test 404 Page
+              </button>
+              <a href="#" class="footer-link" style="color: var(--text-muted);">
+                ↑ Top
+              </a>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <!-- 7. Custom 404 View (Toggleable via JS) -->
+    <div id="view-404">
+      <div class="error-code">404</div>
+      <div class="mono-tag" style="margin-bottom: 0.8rem;">ERROR // PAGE NOT FOUND</div>
+      <h2 class="error-subtitle">Page Not Found</h2>
+      <p class="error-desc">
+        The page you are looking for does not exist or has been moved.
+      </p>
+      <button
+        type="button"
+        class="btn btn-primary"
+        onclick="toggle404View(false)"
+      >
+        ← Return to Home
+      </button>
+    </div>
+
+    <!-- Toast Notification for Email Copy -->
+    <div id="toast" class="toast-notification" role="status" aria-live="polite">
+      <span class="toast-icon">✓</span>
+      <span>Email copied to clipboard!</span>
+    </div>
+
+    <!-- Vanilla JavaScript Functionality -->
+    <script>
+      // =========================================================================
+      // RELOAD & SCROLL RESTORATION MANAGEMENT (DESKTOP & ANDROID)
+      // Guarantees the site always starts from the top on page refresh or reload
+      // =========================================================================
+      if ('scrollRestoration' in history) {
+        history.scrollRestoration = 'manual';
+      }
+
+      // If page was loaded with an in-page section hash (e.g. #contact), strip it immediately
+      if (window.location.hash && window.location.hash !== '#404') {
+        history.replaceState(null, '', window.location.pathname + window.location.search);
+      }
+
+      // Reset scroll position instantly to top
+      window.scrollTo(0, 0);
+
+      window.addEventListener('beforeunload', () => {
+        if (window.location.hash !== '#404') {
+          window.scrollTo(0, 0);
+        }
+      });
+
+      window.addEventListener('pageshow', (event) => {
+        if (window.location.hash !== '#404') {
+          window.scrollTo(0, 0);
+        }
+      });
+
+      // Accordion FAQ Toggle
+      function toggleFaq(button) {
+        const item = button.closest('.faq-item');
+        const panel = item.querySelector('.faq-panel');
+        const icon = button.querySelector('.faq-toggle-icon');
+        const isExpanded = button.getAttribute('aria-expanded') === 'true';
+
+        // Close other open accordions for clean single-focus interaction
+        document.querySelectorAll('.faq-item').forEach(otherItem => {
+          if (otherItem !== item && otherItem.classList.contains('is-open')) {
+            otherItem.classList.remove('is-open');
+            const otherBtn = otherItem.querySelector('.faq-button');
+            const otherPanel = otherItem.querySelector('.faq-panel');
+            const otherIcon = otherBtn.querySelector('.faq-toggle-icon');
+            otherBtn.setAttribute('aria-expanded', 'false');
+            otherPanel.style.maxHeight = null;
+            otherIcon.textContent = '+';
+          }
+        });
+
+        if (isExpanded) {
+          item.classList.remove('is-open');
+          button.setAttribute('aria-expanded', 'false');
+          panel.style.maxHeight = null;
+          icon.textContent = '+';
+        } else {
+          item.classList.add('is-open');
+          button.setAttribute('aria-expanded', 'true');
+          panel.style.maxHeight = panel.scrollHeight + 'px';
+          icon.textContent = '×';
+        }
+      }
+
+      // Copy Email to Clipboard with animated Toast
+      let toastTimer = null;
+      function copyEmailToClipboard() {
+        const email = 'nullvx.art@gmail.com';
+        navigator.clipboard.writeText(email).then(() => {
+          showToast('Email copied to clipboard!');
+        }).catch(() => {
+          // Fallback for environments where clipboard API is restricted
+          const tempInput = document.createElement('input');
+          tempInput.value = email;
+          document.body.appendChild(tempInput);
+          tempInput.select();
+          document.execCommand('copy');
+          document.body.removeChild(tempInput);
+          showToast('Email copied to clipboard!');
+        });
+      }
+
+      function showToast(message) {
+        const toast = document.getElementById('toast');
+        if (message) {
+          toast.querySelector('span:last-child').textContent = message;
+        }
+        toast.classList.add('show');
+        if (toastTimer) clearTimeout(toastTimer);
+        toastTimer = setTimeout(() => {
+          toast.classList.remove('show');
+        }, 3200);
+      }
+
+      // Inquiry Form Submission Handling
+      function handleInquirySubmit(event) {
+        event.preventDefault();
+        const form = document.getElementById('inquiry-form');
+        const thankYou = document.getElementById('form-thank-you');
+
+        const nameVal = document.getElementById('contact-name').value.trim();
+        const emailVal = document.getElementById('contact-email').value.trim();
+        const typeVal = document.getElementById('inquiry-type').value;
+        const msgVal = document.getElementById('contact-message').value.trim();
+
+        // Populate summary state
+        document.getElementById('summary-name').textContent = nameVal || 'Anonymous';
+        document.getElementById('summary-email').textContent = emailVal || '—';
+        document.getElementById('summary-type').textContent = typeVal || 'General Inquiry';
+        document.getElementById('summary-msg').textContent = msgVal ? (msgVal.length > 55 ? msgVal.substring(0, 52) + '...' : msgVal) : '—';
+
+        // Swap view
+        form.style.display = 'none';
+        thankYou.style.display = 'block';
+      }
+
+      function resetInquiryForm() {
+        const form = document.getElementById('inquiry-form');
+        const thankYou = document.getElementById('form-thank-you');
+        form.reset();
+        thankYou.style.display = 'none';
+        form.style.display = 'block';
+      }
+
+      // Custom 404 View Toggle
+      function toggle404View(show) {
+        const mainView = document.getElementById('main-view');
+        const view404 = document.getElementById('view-404');
+
+        if (show) {
+          mainView.style.display = 'none';
+          view404.style.display = 'flex';
+          window.scrollTo(0, 0);
+          history.replaceState(null, '', '#404');
+        } else {
+          view404.style.display = 'none';
+          mainView.style.display = 'block';
+          history.replaceState(null, '', ' ');
+        }
+      }
+
+      // Check URL hash on load for #404 or guarantee top start
+      window.addEventListener('DOMContentLoaded', () => {
+        if (window.location.hash === '#404') {
+          toggle404View(true);
+        } else {
+          window.scrollTo(0, 0);
+          setTimeout(() => {
+            window.scrollTo(0, 0);
+          }, 30);
+        }
+
+        // Intercept internal anchor navigation (#gallery, #about, #faq, #contact, etc.)
+        // to smooth-scroll cleanly WITHOUT persisting hashes into browser URL address bar
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+          anchor.addEventListener('click', function(e) {
+            const targetId = this.getAttribute('href');
+            if (!targetId || targetId === '#' || targetId === '#404') {
+              if (targetId === '#') {
+                e.preventDefault();
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+              }
+              return;
+            }
+
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+              e.preventDefault();
+              const headerOffset = 70;
+              const elementPosition = targetElement.getBoundingClientRect().top;
+              const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+              window.scrollTo({
+                top: offsetPosition,
+                behavior: 'smooth'
+              });
+            }
+          });
+        });
+      });
+
+      // Smooth Text & Section Scroll Reveal Engine
+      function initScrollReveals() {
+        const textElements = document.querySelectorAll('.text-reveal, .scroll-reveal');
+
+        // Automatically assign cascading staggered delays within sections and cards
+        const animationGroups = document.querySelectorAll(
+          '.hero-section, .section-header, .hub-card, .about-bio-card, .highlights-grid, .faq-accordion, .contact-card'
+        );
+
+        animationGroups.forEach(group => {
+          const items = group.querySelectorAll('.text-reveal');
+          items.forEach((item, index) => {
+            if (!item.style.transitionDelay) {
+              item.style.transitionDelay = `${(index * 0.08).toFixed(2)}s`;
+            }
+          });
+        });
+
+        // IntersectionObserver for smooth scroll-triggered fades
+        const observerOptions = {
+          root: null,
+          rootMargin: '0px 0px -40px 0px',
+          threshold: 0.1
+        };
+
+        const revealObserver = new IntersectionObserver((entries, obs) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add('is-revealed');
+              obs.unobserve(entry.target);
+            }
+          });
+        }, observerOptions);
+
+        textElements.forEach(el => revealObserver.observe(el));
+
+        // Smooth initial load fade-in for Hero above-the-fold content
+        requestAnimationFrame(() => {
+          setTimeout(() => {
+            document.querySelectorAll('#hero .text-reveal, #hero .scroll-reveal').forEach(el => {
+              el.classList.add('is-revealed');
+            });
+          }, 60);
+        });
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initScrollReveals);
+      } else {
+        initScrollReveals();
+      }
+
+      // Mobile Android Dock Pill Navigation & ScrollSpy
+      function handleDockClick(btn, e) {
+        if (e) e.preventDefault();
+        const targetSection = btn.getAttribute('data-section');
+        const targetEl = targetSection === 'hero' ? document.getElementById('hero') : document.getElementById(targetSection);
+        if (targetEl) {
+          const headerOffset = targetSection === 'hero' ? 0 : 70;
+          const elementPosition = targetEl.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+          });
+        }
+        document.querySelectorAll('.mobile-dock-btn').forEach(b => b.classList.remove('is-active'));
+        btn.classList.add('is-active');
+      }
+
+      function updateDockScrollSpy() {
+        if (window.innerWidth > 768) return;
+
+        const sections = [
+          { id: 'hero', element: document.getElementById('hero') },
+          { id: 'gallery', element: document.getElementById('gallery') },
+          { id: 'about', element: document.getElementById('about') },
+          { id: 'faq', element: document.getElementById('faq') },
+          { id: 'contact', element: document.getElementById('contact') }
+        ];
+
+        let activeId = 'hero';
+        const scrollPosition = window.scrollY + 180;
+
+        for (let i = sections.length - 1; i >= 0; i--) {
+          const item = sections[i];
+          if (item.element && item.element.offsetTop <= scrollPosition) {
+            activeId = item.id;
+            break;
+          }
+        }
+
+        document.querySelectorAll('.mobile-dock-btn').forEach(btn => {
+          if (btn.getAttribute('data-section') === activeId) {
+            btn.classList.add('is-active');
+          } else {
+            btn.classList.remove('is-active');
+          }
+        });
+      }
+
+      window.addEventListener('scroll', updateDockScrollSpy, { passive: true });
+    </script>
+  </body>
+</html>
